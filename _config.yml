@@ -1,29 +1,78 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+# title: 尹成的技术专栏
+# email: yc330483161@163.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://clendy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# 
+# permalink: /:year/:month/:day/:title/
+# 
+# twitter_username: Clendy
+# github_username:  Clendy
+# 
+# # Build settings
+# markdown: kramdown
+# theme: minima
+# plugins:
+#   - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+
+
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: "姚信的技术专栏"
+title: " 尹成的技术专栏"
 brief-intro: "System Research"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://XinYao1994.github.io" # the base hostname & protocol for your site
+url: "https://clendy.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: #gaohaoyang126
-facebook_username: #gaohaoyang.water
-github_username:  XinYao1994
-email: u3004330@connect.hku.hk
+twitter_username: Clendy
+facebook_username: Clendy
+github_username:  Clendy
+email: yc330483161@163.com
 weibo_username: 
 zhihu_username: 
-linkedIn_username: xinyao1994
+linkedIn_username: Clendy
 dribbble_username:
 
-description_footer: 来自姚信的个人专栏！
+description_footer: 来自尹成的技术专栏！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
@@ -33,11 +82,11 @@ description_footer: 来自姚信的个人专栏！
 # using Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 52bbb620d9680fd85254                            #生成的clientID
-  clientSecret: d92cec378527800b0816d1bdd26dc71eb5dd0ccd    #生成的clientSecret
-  repo: XinYao1994.github.io    #仓库名称
-  owner: XinYao1994    #github用户名
-  admin: XinYao1994
+  clientID: 0850d96de0cfacd94eb8                            #生成的clientID
+  clientSecret: c536bb19cb6e989e423cb3b75ec4b3cef9ba8169    #生成的clientSecret
+  repo: Clendy_Blog    #仓库名称
+  owner: Clendy    #github用户名
+  admin: Clendy
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # statistic analysis 统计代码
@@ -45,13 +94,13 @@ gitalk:
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 # baidu_tongji_id: 1cc1fc4b4b456bf7c99ce80aec5bf009
-google_analytics_id: UA-126298955-1 # google 分析追踪id
+google_analytics_id: UA-133813133-1 # google 分析追踪id
 ga_domain: auto
 
 friends: [
     {
-        title: "Linkedin - Xin YAO",
-        href: "https://www.linkedin.com/in/%E4%BF%A1-%E5%A7%9A-947492167/"
+        title: "Linkedin - Yin Cheng",
+        href: "https://www.linkedin.com/in/%E6%88%90-%E5%B0%B9-34162b17a"
     }
 ]
 
@@ -72,7 +121,10 @@ tag_dir: tag/
 # excerpt
 excerpt_separator: "\n\n\n\n"
 
+#pagination: 
+#  enabled: true
+
 # paginate
 plugins: [jekyll-paginate]
 paginate: 6
-port: 4001
+port: 4000

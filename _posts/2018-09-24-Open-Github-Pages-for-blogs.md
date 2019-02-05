@@ -3,7 +3,7 @@ layout:     post
 title:      Open Github Pages for blogs
 subtitle:   Others
 date:       2018-09-24
-author:     Xin YAO
+author:     Clendy
 catalog: true
 tags:
     - git
