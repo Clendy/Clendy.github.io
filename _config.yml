@@ -56,7 +56,7 @@
 
 # Site settings
 title: " 尹成的技术专栏"
-brief-intro: "System Research"
+brief-intro: "Android & Flutter Developer"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://clendy.github.io" # the base hostname & protocol for your site
 
@@ -72,7 +72,7 @@ zhihu_username:
 linkedIn_username: Clendy
 dribbble_username:
 
-description_footer: 来自尹成的技术专栏！
+description_footer: 来自尹成的个人专栏！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
