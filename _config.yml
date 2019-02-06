@@ -72,7 +72,7 @@ zhihu_username:
 linkedIn_username: Clendy
 dribbble_username:
 
-description_footer: 来自尹成的个人专栏！
+description_footer: Frome Clendy`s personal column!
 
 # comments
 # two ways to comment, only choose one, and use your own short name
@@ -84,7 +84,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 0850d96de0cfacd94eb8                            #生成的clientID
   clientSecret: c536bb19cb6e989e423cb3b75ec4b3cef9ba8169    #生成的clientSecret
-  repo: Clendy_Blog    #仓库名称
+  repo: clendy.github.io    #仓库名称
   owner: Clendy    #github用户名
   admin: Clendy
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
