@@ -37,6 +37,7 @@ tags:
 另一个不同之处是,协程不能在随机指令中挂起,只能在挂起点挂起(调用标记函数)!
 
 # 挂起函数(Suspending functions)
+
 当调用[suspend修饰的函数]时会发生协程挂起：
 ```
     suspend fun doSomething(foo: Foo): Bar {           
@@ -45,8 +46,8 @@ tags:
 该函数称为挂起函数,调用它们可能挂起协程(如果调用结果已经可用,协程库可决定不挂起)
 挂起函数能像普通函数获取参数和返回值,但只能在协程/挂起函数中被调用!
 
-* 启动协程,至少要有一个挂起函数,通常是匿名的(即挂起lambda表达式),
-一个简化的async函数(源自kotlinx.coroutines库)：
+* 启动协程,至少要有一个挂起函数,通常是匿名的(即挂起lambda表达式),一个简化的async函数(源自kotlinx.coroutines库)：
+
 ```
     //async函数是一个普通函数(不是挂起函数)
     //block参数有suspend修饰,是一个匿名的挂起函数(即挂起lambda表达式)
@@ -64,13 +65,14 @@ tags:
         val result = computation.await()
         
 ```
+
 * 挂起函数不能在普通函数中被调用：
 ```
     fun main(args: Array<String>) {
         doSomething() //错误: 挂起函数不能在非协程中被调用
     }
 ```
-* 挂起函数可以是虚拟的,当覆盖它们时,必须指定suspend修饰符：
+*  挂起函数可以是虚拟的,当覆盖它们时,必须指定suspend修饰符：
 ```
     interface Base {
         suspend fun foo()
