@@ -2,7 +2,7 @@
 layout:     post
 title:      Git Beginner
 subtitle:   History Blogs @ 2015/10/1
-date:       2018-09-25
+date:       2016-06-18
 author:     Clendy
 catalog: true
 tags:
