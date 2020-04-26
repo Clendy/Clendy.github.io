@@ -46,7 +46,7 @@ tags:
 该函数称为挂起函数,调用它们可能挂起协程(如果调用结果已经可用,协程库可决定不挂起)
 挂起函数能像普通函数获取参数和返回值,但只能在协程/挂起函数中被调用!
 
-* 启动协程,至少要有一个挂起函数,通常是匿名的(即挂起lambda表达式),一个简化的async函数(源自kotlinx.coroutines库)：
+启动协程,至少要有一个挂起函数,通常是匿名的(即挂起lambda表达式),一个简化的async函数(源自kotlinx.coroutines库)：
 
 ```
     //async函数是一个普通函数(不是挂起函数)
@@ -62,17 +62,16 @@ tags:
     async {
         ...
         //await()是挂起函数,该函数挂起一个协程,直到执行完成返回结果
-        val result = computation.await()
-        
+        val result = computation.await()  
 ```
 
-* 挂起函数不能在普通函数中被调用：
+挂起函数不能在普通函数中被调用：
 ```
     fun main(args: Array<String>) {
         doSomething() //错误: 挂起函数不能在非协程中被调用
     }
 ```
-*  挂起函数可以是虚拟的,当覆盖它们时,必须指定suspend修饰符：
+挂起函数可以是虚拟的,当覆盖它们时,必须指定suspend修饰符：
 ```
     interface Base {
         suspend fun foo()
